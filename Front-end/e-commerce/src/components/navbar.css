@@ -1,0 +1,37 @@
+nav ul{
+    margin-right: 100px;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+    z-index: 999;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+}
+
+/* Prevent scrolling when mobile menu is open */
+body.menu-open {
+    overflow: hidden;
+}
+
+/* Burger button styles */
+.burger-button {
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.burger-button:hover {
+    transform: scale(1.1);
+}
+
+/* Media query for responsive adjustments */
+@media (max-width: 1023px) {
+    nav ul {
+        margin-right: 0;
+    }
+}
